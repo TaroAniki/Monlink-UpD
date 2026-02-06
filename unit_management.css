@@ -1,0 +1,52 @@
+/* Page title style */
+.manager-page  {h1,h2,h3{
+    
+    color: #AA2437;       /* Red title */
+    font-family: Arial, sans-serif;
+    text-align: center;    /* Centered */
+    margin-bottom: 1.5rem; /* Space below title */
+    font-size: 2rem;       /* Font size */
+    font-weight: 700;      /* Bold */
+}
+}
+
+/* Container for Add/Edit/Delete buttons */
+.unit-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Space between buttons */
+    margin-top: 1rem;
+}
+
+/* Add/Edit/Delete buttons style */
+.unit-buttons button {
+    width: 200px;
+    max-width: 90%;
+    padding: 0.5rem 1rem;
+    background-color: #AA2437;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.unit-buttons button:hover {
+    background-color: #c1364a; /* Darker red on hover */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .unit-buttons button {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    .manager-page h1 {
+        font-size: 1.5rem;
+    }
+}
+

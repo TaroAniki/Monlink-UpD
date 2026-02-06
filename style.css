@@ -1,0 +1,382 @@
+@import url(httphttps://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swaps://fonts.googleapis.com/css2?family=Bytesized&family=Tiny5&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap);
+@import url(https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css);
+
+
+:root {
+  --primary-color: #AA2437;
+  --text-color: #2E2E2E;
+  --bg-color: #F9FAFD;
+  --input-bg: #F0F2F5;
+  --white: #FFFFFF;
+  --font-main: "Zalando Sans Expanded", sans-serif;
+  --hover-color: #c1364a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+/* home */
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+button {
+    cursor:pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: var(--font-main);;
+}
+
+header .navbar{
+    display: flex;
+    padding: 2rem;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--text-color);
+}
+
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 20px;
+}
+.navbar .nav-menu .navlink {
+    padding: 10px 18px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+.navbar .nav-sign-in{
+    display: flex;
+    gap: 20px;
+}
+.navbar .nav-sign-in .navlink {
+    
+    color: var(--text-color);
+    padding: 10px 18px;
+    font-size: 0.9rem;
+}
+
+#booknow-btn{
+    color: #ffffff;
+     background-color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+#booknow-btn:hover{
+    background-color: var(--hover-color);
+}
+
+.home-img-1{
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home-img-1 img {
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+  object-fit: cover;
+object-position: bottom;
+  display: block;
+}
+
+.home-img-1 .btn-inside-img-home{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.home-img-1 #booknow-btn {
+    
+  color: #ffffff;
+     background-color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.home-img-1 #signin-btn {
+    
+  color: #ffffff;
+     background-color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.home-img-1 #signin-btn:hover{
+    background-color: var(--hover-color);
+}
+.home-img-1 #booknow-btn:hover{
+    background-color: var(--hover-color);
+}
+
+.home-img-1 .first-imagetext{
+    top: 45%;
+left:15%;
+position: absolute;
+text-align: center;
+font-size: 100px;
+color: var(--white);
+text-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+/* login */
+
+
+.home-page-btn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 100;
+    
+    background-color: #F0F2F5;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    
+
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+    
+    transition: all 0.3s ease;
+}
+
+.home-page-btn a {
+    text-decoration: none !important;
+    color: #2e2e2e !important;   
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+.home-page-btn i {
+    color: #2e2e2e;
+    font-size: 1.1rem;
+}
+
+
+.home-page-btn:hover {
+  background-color: #FFCCC7;
+}
+
+.body-login {
+    font-family: var(--font-main);
+  background-color: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.login-description {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 2.5rem;
+}
+
+
+.login-box {
+  position: relative;
+  border: 2px solid #E1E5EE;
+  background-color: var(--white);
+  border-radius: 50px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+}
+
+.login-box:focus-within {
+  border-color: var(--primary-color);
+}
+
+.login-icon {
+  font-size: 1.25rem;
+  color: #A0A5BA;
+  margin-right: 0.75rem;
+}
+
+.login-box-input {
+  position: relative;
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  z-index: 1;
+}
+
+
+.login-label {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  font-size: 0.9rem;
+  color: #A0A5BA;
+  transition: .3s;
+  pointer-events: none; 
+}
+
+
+.login-input:focus + .login-label,
+.login-input:not(:placeholder-shown) + .login-label {
+  top: -6px;
+  font-size: 0.75rem;
+  color: var(--primary-color);
+}
+
+
+.login-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+}
+
+.login-forgot a {
+  color: #A0A5BA;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.login-forgot a:hover {
+  color: var(--primary-color);
+}
+
+.login-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 4px 12px rgba(58, 87, 232, 0.3);
+}
+
+.login-button:hover {
+  background-color: #c1364a;
+  box-shadow: 0 6px 16px rgba(58, 87, 232, 0.4);
+}
+
+.login-register {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #A0A5BA;
+}
+
+.login-register a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.error-msg {
+    background-color: #FFF2F2;
+    color: #FF4D4F;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #FFCCC7;
+}
+
+
+.login-img {
+  width: 100%;
+  height: 100%;
+}
+
+.login-img img {
+    border-radius: 50px 0 0 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
