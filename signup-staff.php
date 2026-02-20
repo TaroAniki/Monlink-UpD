@@ -7,7 +7,7 @@ include ("functions.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    //something was posted
+
     $first_name = $_POST['first_name'];
     $middle_name = $_POST['middle_name'];
     $last_name = $_POST['last_name'];
@@ -24,12 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
       }
     
-    // Matches: 09171234567, +639171234567, 639171234567
+  
     $phoneregex = '/^((\+63)|63|0)9[0-9]{9}$/';
     if (!preg_match($phoneregex, $phone_number)){
         echo "<script>alert('Phone Number format error!');</script>";
     }else{
-//save to database
+
         if ($middle_name == null){
             $middle_name = "";
         }
@@ -59,24 +59,36 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
-        <link href="" rel="stylesheet">
-    <link href="" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
+    <title>Create Staff Account</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <body class="signup-staff-page"></body>
-    <a href="manager-dashboard.php">GO BACK</a>
-    <div>
-        <form method="post">
-            <div>Staff Create Account</div>
-            <input type="text" name="first_name" placeholder="First Name" required><br>
-            <input type="text" name="middle_name" placeholder="Middle Name"><br>
-            <input type="text" name="last_name" placeholder="Last Name" required><br>
-            <input type="email" name="email" placeholder="Email" required><br>
-            <input type="number" name="phone_number" placeholder="Phone Number" required><br>
-            <input type="submit" value="Create Account"><br>
-        </form>
-    </div>
+
+<body class="signup-staff-page">
+
+<header>
+    <nav class="navbar2">
+        <h2 class="logo-text">Create Staff Account</h2>
+        <a href="manager-dashboard.php" class="nav-link" id="booknow-btn">⤸ Back</a>
+    </nav>
+</header>
+
+<div class="signup-wrapper">
+    <form method="post" class="signup-form">
+        <h3>Staff Information</h3>
+
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="middle_name" placeholder="Middle Name">
+        <input type="text" name="last_name" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="phone_number" placeholder="Phone Number" required>
+
+        <button type="submit" class="signup-btn">Create Account</button>
+    </form>
+</div>
+
+<div class="bg-wrapper">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Background">
+</div>
+
 </body>
 </html>
